@@ -1,5 +1,11 @@
-import Main from "./src/Main";
+import { NativeBaseProvider } from 'native-base';
+
+import Main from './src/Main';
 
 export default function App() {
-    return <Main />;
+  return (
+    <NativeBaseProvider>
+      <Main />
+    </NativeBaseProvider>
+  );
 }
