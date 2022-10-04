@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Backend for thingyjiggymabob",
+  "main": "index.js",
+  "repository": "https://github.com/cajoho99/thingyjiggymabob",
+  "author": "Håll",
+  "license": "No licence",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --trace-warnings --respawn --exit-child --transpile-only src/server.ts",
+    "build": "tsc",
+    "eslint:check": "eslint --ignore-path .gitignore --ext .ts,.tsx .",
+    "eslint:fix": "eslint --ignore-path .gitignore --ext .ts,.tsx --fix .",
+    "prettier:check": "prettier --ignore-path .gitignore --check .",
+    "prettier:fix": "prettier --ignore-path .gitignore --write .",
+    "prisma:db:push": "yarn prisma db push",
+    "start": "node dist/src/server.js"
+  },
+  "dependencies": {
+    "@trpc/server": "^9.27.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.8.2",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "prettier": "^2.7.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "types": ["reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "composite": true,
+    "outDir": "./dist"
+  },
+  "references": [],
+  "extends": "@tsconfig/node16/tsconfig.json"
+}
