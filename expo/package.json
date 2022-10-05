@@ -14,7 +14,10 @@
   "dependencies": {
     "@react-aria/interactions": "^3.12.0",
     "expo": "~46.0.13",
+    "expo-auth-session": "^3.7.1",
+    "expo-random": "^12.3.0",
     "expo-status-bar": "~1.4.0",
+    "expo-web-browser": "^11.0.0",
     "native-base": "^3.4.17",
     "react": "18.0.0",
     "react-dom": "18.0.0",
